@@ -1,0 +1,64 @@
+// Basic text wrapping module
+
+////////////////////////////
+///fontfaces////////////////
+////////////////////////////
+
+.f-roboto
+  font-family 'Roboto', sans-serif
+
+.f-ico
+  font-family 'icomoon'
+
+////////////////////////////
+///text styles//////////////
+////////////////////////////
+
+
+//default text styles
+b
+strong
+  font-weight bolder
+
+
+i
+em
+  font-style italic
+
+
+h1
+.h1
+  font-weight 900// bolder
+
+h2
+.h2
+  font-weight 700
+
+h3
+.h3
+  font-weight 100
+
+h4
+.h4
+  font-weight 700
+
+h5
+.h5
+  font-weight 400
+  text-transform uppercase
+
+h6
+.h6
+  font-weight 100
+  text-transform uppercase
+
+
+//text wrapping
+.text
+  @extend .f-roboto
+  font-weight 300
+
+  p
+    line-height 1.2
+    margin gutter 0
+

@@ -1,0 +1,52 @@
+// Basic image component
+
+//image wrapper
+.iw
+  position relative
+  overflow hidden
+  line-height 0
+  font-size 0
+
+  &:before
+    @extend .pseudo
+    position absolute
+    z-index 0
+
+    height gutter
+    width gutter
+
+    border-radius 50%
+    border-right solid 1px rgba(0,0,0,.3)
+
+    top 50%
+    left 50%
+
+    transform translate(-50%, -50%)
+    -webkit-transform translate(-50%, -50%)
+
+    animation rotate 300ms linear infinite
+
+  .img
+    position relative
+    width 100%
+    z-index 10
+
+
+.iw--crop // faz center crop proporcional ao wrapper
+    @extend .iw
+    padding-top rem(gutter * 3)
+    .img
+      position absolute
+      top 50%
+      left 50%
+
+      transform translate(-50%, -50%)
+      -webkit-transform translate(-50%, -50%)
+
+      margin auto
+      min-height 100%
+      width auto
+
+      &--portrait
+        width 100%
+        height auto

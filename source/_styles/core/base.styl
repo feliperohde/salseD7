@@ -1,0 +1,21 @@
+// Normalize Styles
+
+@import 'icons';
+@import 'variables';
+@import 'mixins';
+
+//helpers básicos
+.wrapper
+  center(desk-lg-bk, gutter)
+
+//create a pseudo element
+.pseudo
+  content " "
+  font-size 0
+  display block
+
+//create pseudo elements to clear floats
+.clear
+  &:before, &:after
+    @extend .pseudo
+    clear both

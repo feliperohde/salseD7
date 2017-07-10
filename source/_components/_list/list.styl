@@ -1,0 +1,22 @@
+// Basic list component
+
+list()
+  zoom 1
+
+list--horizontal()
+  @extend .list
+  white-space nowrap
+
+  .list__item
+    display inline-block
+
+    + .list__item
+      margin-left -4px
+/////////////////////
+
+.list
+  list()
+
+.list--horizontal
+  list--horizontal()
+

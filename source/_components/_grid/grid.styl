@@ -1,0 +1,33 @@
+// Basic grid component
+
+.row
+  @extend .clear
+
+  margin-left -(gutter)
+  margin-right -(gutter)
+
+[class*="col-"]
+  padding-left gutter
+  padding-right gutter
+
++above(tabl-bk)
+  [class*="col-"]
+    float left
+
+  .col-hundred
+    width 100%
+
+  .col-half
+    width 50%
+
+  .col-third
+    width 33.33333%
+
+  .col-quarter
+    width 25%
+
+  .col-2third
+    width 66.66666%
+
+  .col-3quarter
+    width 75%
